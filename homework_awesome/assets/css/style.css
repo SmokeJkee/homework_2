@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: open sans, sans-serif;
+    text-align: center; /* Поместил в селектор *, так как весь текст в макете находится по центру */
+}
+
+h1 {
+    font-size: 36px;
+    font-family: raleway;
+    margin-top: 100px;
+    font-weight: 400
+}
+
+.awesome-line {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 64px;
+    height: 1px;          /* В макете показывает 2px, но визуально половина обведенной области пустая, решил поставить 1px */
+    background-color: #E72424;
+    border: 0px;
+}
+
+.awesome-text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #86878B;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+}
+
+.awesome-info {
+    margin-top: 67px;
+    font-size: 0;
+}
+
+.awesome-info-part {
+    font-size: 16px;
+    display: inline-block;
+    width: 33.33%;
+    max-width: 350px;
+    margin-left: 32px;
+}
+
+.awesome-info-part:first-child {
+    margin-left: 0px;                  
+}
+
+.awesome-info-part-circle {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #E72424;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;        
+    align-items: center;  
+}
+
+    /* В этой задаче решил выровнять с помощью Display: flex.
+    Нашел хороший способ через абсолютное позиционирование картинки, при помощи transform: translate(-50%, -50%), но выбрал flex, так как
+    по идее мы должны были его чуть посмотреть, но решили оставить на лекцию: 'Углубленная работа с Flex-box model' */
+
+.awesome-info-part h2 {
+    margin-top: 28px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.awesome-info-part p {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 14px;
+    text-align: center;     
+}
